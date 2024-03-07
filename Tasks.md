@@ -1,0 +1,6 @@
+- [] Set up navbar to underline selected link
+- [] research designs and improve the website structure
+- [] change navbar color to darker shade of green
+- [] build cart
+- [] build payment page
+- [] build form for activities
