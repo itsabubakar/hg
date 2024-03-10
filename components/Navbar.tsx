@@ -1,10 +1,13 @@
 import { MdOutlineShoppingCart } from "react-icons/md";
 import Link from "next/link"
 import { useRouter } from 'next/router'
+import { useShoppingCart } from "@/context/ShoppingCartContext";
 
 
 
 const Navbar = ({ isMenuOpen, setMenuOpen, light }: { isMenuOpen: boolean, setMenuOpen: any, light?: boolean }) => {
+    const { openCart, cartQuantity } = useShoppingCart()
+
     const router = useRouter()
 
     const toggleMenu = () => {
@@ -63,7 +66,7 @@ const Navbar = ({ isMenuOpen, setMenuOpen, light }: { isMenuOpen: boolean, setMe
                             <Link href="/activities">Activities</Link>
                         </li>
                         <li className={`hover:underline decoration`}>
-                            <Link className="flex items-center" href="/community">Cart <MdOutlineShoppingCart size={20} className="ml-2" /></Link>
+                            <Link href={'/cart'} className="flex relative items-center" >Cart <span className="absolute  top-4 right-0 bg-green-500 rounded-full px-2 py-1">{cartQuantity}</span> <MdOutlineShoppingCart size={20} className="ml-2" /></Link>
                         </li>
                     </ul>
                 </div>

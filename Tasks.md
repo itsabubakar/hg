@@ -1,6 +1,17 @@
+- [] build cart
+- [] build payment pages
+- [] build join us form
+- [] clean up cart
+- [] build form for activities
 - [] Set up navbar to underline selected link
 - [] research designs and improve the website structure
 - [] change navbar color to darker shade of green
-- [] build cart
-- [] build payment page
-- [] build form for activities
+- [] Clean up mobile nav
+- [x] Fix cart numbering
+- [x] checkout page
+- [] Build form for join us
+- [] Build form for activities
+- [] 
+- [] 
+- [] 
+

@@ -3,6 +3,11 @@ import Navbar from "@/components/Navbar"
 import Link from "next/link"
 import { useState } from "react"
 
+// icons
+import { CiHeart } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+import { CgCommunity } from "react-icons/cg";
+
 const index = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
   return (
@@ -22,21 +27,29 @@ const index = () => {
               </div>
             </section>
 
-            <section className="max-w-6xl mx-auto px-5 py-20 text-center">
-              <h2 className="text-[#d49f11] text-lg pb-4">What we offer </h2>
-              <p className="text-xl">Whether you are seeking to rejuvenate your PERSONAL HEALTH,                 or require a customised MIND COACHING experience
-                to ovrhaul your                MINDSET, and sharpen your EMOTIONAL INTELLIGENCE, or you simply need an ideal avenue for                FAMILY BONDING, or a SERENE ENVIRONMENT                to HEAL AN ELDERLY RELATIVE, or just need regular supply of HALALORGANIC FRUITS/VEGETABLES in Kaduna, Abuja, or Kano</p>
+            <section className="max-w-6xl mx-auto px-5 py-20 ">
+              <h2 className="text-[#d49f11] text-2xl pb-4 text-center">What we offer </h2>
+              <p className="text-xl">Whether you are seeking to rejuvenate your personal health,                 or require a customised mind coaching experience
+                to ovrhaul your                mindset, and sharpen your emotional intelligence, or you simply need an ideal avenue for                family nonding, or a serence environment                to heal an elderly relative, or just need regular supply of HalalAgric fruits/vegetables in Kaduna, Abuja, or Kano</p>
             </section>
 
             <section className=" bg-gray-100">
-              <div className="max-w-6xl mx-auto px-5 py-20 text-center">
-                <h2 className="text-[#d49f11] text-lg pb-4">Join a Wellness Club </h2>
-                <p className="text-xl pb-8">
-                  By signing up for a Wellness Club you will get support from likeminded people in a supportive and welcoming community who will motivate and educate you on your journey towards a healthier life! The Wellness Club programmes are developed in Sweden by leading scientists and health experts based on the latest scientific research and knowledge. We are passionate about helping you live a longer, healthier, happier life. We are dedicated to help you achieve your goals successfully!
+              <div className="max-w-6xl mx-auto px-5 py-20 ">
+                <h2 className="text-[#d49f11] text-2xl pb-4 text-center">Join a Wellness Club </h2>
 
+                <p className="text-xl pb-4"> Depending on your individual goals, you can choose either the Daily Wellbeing or Weight Management programme. We have the right Wellness products to support your need. All products are developed in Sweden and the formulations are all inspired by nature and power by science.
 
+                  Don't wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
 
-                </p>
+                  A healthier, happier life starts here!</p>
+              </div>
+
+            </section>
+
+            <section className=" ">
+              <div className="max-w-6xl mx-auto px-5 py-20 ">
+                <h2 className="text-[#d49f11] text-2xl pb-4 text-center">Goals </h2>
+
                 <p className="text-xl pb-4"> Depending on your individual goals, you can choose either the Daily Wellbeing or Weight Management programme. We have the right Wellness products to support your need. All products are developed in Sweden and the formulations are all inspired by nature and power by science.
 
                   Don't wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
@@ -51,20 +64,26 @@ const index = () => {
               ">
                 <div>
                   {/* Icon */}
-                  <div></div>
-                  <h2 className="text-xl font-mont f0nt-medium">Start a healthier lifestyle</h2>
+                  <div className="pb-2">
+                    <CiHeart color="#045346" size={30} />
+                  </div>
+                  <h2 className="text-xl font-mont font-medium pb-2">Start a healthier lifestyle</h2>
                   <p>Join us and learn how to make small lifestyle changes that add up to a big difference for your overall health and wellbeing in the long term.</p>
                 </div>
                 <div>
                   {/* Icon */}
-                  <div></div>
-                  <h2 className="text-xl font-mont f0nt-medium">Learn from the experts</h2>
+                  <div className="pb-2">
+                    <CiUser color="#045346" size={30} />
+                  </div>
+                  <h2 className="text-xl font-mont font-medium pb-2">Learn from the experts</h2>
                   <p>Our certified Oriflame Wellness Club Coaches have gone through an extensive science based educational programme, developed by our Swedish health experts.</p>
                 </div>
                 <div>
                   {/* Icon */}
-                  <div></div>
-                  <h2 className="text-xl font-mont f0nt-medium">Join our supportive Community</h2>
+                  <div className="pb-2">
+                    <CgCommunity color="#045346" size={30} />
+                  </div>
+                  <h2 className="text-xl font-mont font-medium pb-2">Join our supportive Community</h2>
                   <p>As a Club member you will get to know other people, feel the friendly and supportive atmosphere to help you reach your goals.
 
                   </p>

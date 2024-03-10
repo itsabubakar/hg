@@ -1,3 +1,4 @@
+import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
@@ -7,7 +8,9 @@ const jost = Jost({ subsets: ['latin'], variable: '--font-jost' })
 
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <main className={` ${pontano.variable} ${jost.variable}`}>
-    <Component {...pageProps} />
+  return <main className={`h-full ${pontano.variable} ${jost.variable}`}>
+    <ShoppingCartProvider>
+      <Component {...pageProps} />
+    </ShoppingCartProvider>
   </main>
 }
