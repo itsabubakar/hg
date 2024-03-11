@@ -28,7 +28,7 @@ const Activities = (props: Props) => {
                                 <h2 className="text-3xl text-[#045346] font-semibold font-pont "> Activities</h2>
 
                                 <div className="py-8 flex flex-col gap-y-14 lg:flex-row gap-x-6">
-                                    <p className="text-lg">Our services focus on patient-centered care, promoting total wellness through the professional use of nature's bounties and mind coaching therapies. We aim to heal the mind, body, and soul</p>
+                                    <p className="text-lg">Our services focus on patient-centered care, promoting total wellness through the professional use of nature bounties and mind coaching therapies. We aim to heal the mind, body, and soul</p>
 
                                 </div>
                             </div>
