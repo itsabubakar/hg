@@ -8,7 +8,8 @@ import { CiHeart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { CgCommunity } from "react-icons/cg";
 
-const index = () => {
+const Index = () => {
+
   const [isMenuOpen, setMenuOpen] = useState(false)
   return (
     <main className="font-jost">
@@ -100,4 +101,4 @@ const index = () => {
   )
 }
 
-export default index                                        
+export default Index                                        
