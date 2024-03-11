@@ -40,7 +40,7 @@ const Index = () => {
 
                 <p className="text-xl pb-4"> Depending on your individual goals, you can choose either the Daily Wellbeing or Weight Management programme. We have the right Wellness products to support your need. All products are developed in Sweden and the formulations are all inspired by nature and power by science.
 
-                  Don't wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
+                  Dont wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
 
                   A healthier, happier life starts here!</p>
               </div>
@@ -53,7 +53,7 @@ const Index = () => {
 
                 <p className="text-xl pb-4"> Depending on your individual goals, you can choose either the Daily Wellbeing or Weight Management programme. We have the right Wellness products to support your need. All products are developed in Sweden and the formulations are all inspired by nature and power by science.
 
-                  Don't wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
+                  Dont wait! Start your journey to a healthier lifestyle today by joining one of our Wellness Clubs!
 
                   A healthier, happier life starts here!</p>
               </div>
