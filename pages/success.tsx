@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar"
 import { useState } from "react"
 
 type Props = {}
-const success = (props: Props) => {
+const Success = (props: Props) => {
     const [isMenuOpen, setMenuOpen] = useState(false)
 
 
@@ -30,4 +30,4 @@ const success = (props: Props) => {
         </div>
     )
 }
-export default success
+export default Success

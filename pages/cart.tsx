@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 type Props = {}
-const cart = (props: Props) => {
+const Cart = (props: Props) => {
     const [isMenuOpen, setMenuOpen] = useState(false)
 
 
@@ -39,4 +39,4 @@ const cart = (props: Props) => {
         </div>
     )
 }
-export default cart
+export default Cart

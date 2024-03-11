@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useState } from "react"
 
 type Props = {}
-const activities = (props: Props) => {
+const Activities = (props: Props) => {
     const [isMenuOpen, setMenuOpen] = useState(false)
 
 
@@ -125,4 +125,4 @@ const activities = (props: Props) => {
         </div>
     )
 }
-export default activities
+export default Activities

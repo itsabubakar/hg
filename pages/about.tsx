@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar"
 import { useState } from "react"
 
 type Props = {}
-const about = (props: Props) => {
+const About = (props: Props) => {
     const [isMenuOpen, setMenuOpen] = useState(false)
 
 
@@ -60,4 +60,4 @@ const about = (props: Props) => {
         </div>
     )
 }
-export default about
+export default About

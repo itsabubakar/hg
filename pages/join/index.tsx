@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import { useState } from "react"
 
 type Props = {}
-const join = (props: Props) => {
+const Join = (props: Props) => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const router = useRouter()
 
@@ -96,4 +96,4 @@ const join = (props: Props) => {
         </div>
     )
 }
-export default join
+export default Join
