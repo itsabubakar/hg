@@ -32,13 +32,13 @@ const Navbar = ({ isMenuOpen, setMenuOpen, light }: { isMenuOpen: boolean, setMe
                     <li className={` hover:text-gray-400 ${router.pathname === '/' ? ' text-gray-400' : ''}`}>
                         <Link href={'/'}>Home</Link>
                     </li>
-                    <li className={` hover:text-gray-400 ${router.pathname === '/discover' ? ' text-gray-400' : ''}`}><Link href={'/discover'}>Join us</Link></li>
-                    <li className={` hover:text-gray-400 ${router.pathname === '/roadmaps' ? ' text-gray-400' : ''}`}><Link href={'/roadmaps'}>Store</Link></li>
-                    <li className={` hover:text-gray-400 ${router.pathname === '/arc' ? ' text-gray-400' : ''}`}><Link href={'/arc'}>About us</Link></li>
-                    <li className={` hover:text-gray-400 ${router.pathname === '/community' ? ' text-gray-400' : ''}`}><Link href={'/community'}
+                    <li className={` hover:text-gray-400 ${router.pathname === '/join' ? ' text-gray-400' : ''}`}><Link href={'/join'}>Join us</Link></li>
+                    <li className={` hover:text-gray-400 ${router.pathname === '/store' ? ' text-gray-400' : ''}`}><Link href={'/store'}>Store</Link></li>
+                    <li className={` hover:text-gray-400 ${router.pathname === '/about' ? ' text-gray-400' : ''}`}><Link href={'/about'}>About us</Link></li>
+                    <li className={` hover:text-gray-400 ${router.pathname === '/activities' ? ' text-gray-400' : ''}`}><Link href={'/activities'}
                     >Activities</Link></li>
 
-                    <li className={` hover:text-gray-400 ${router.pathname === '/community' ? ' text-gray-400' : ''}`}><Link className="flex justify-center items-center gap-x-2 " href={'/community'}
+                    <li className={` hover:text-gray-400 ${router.pathname === '/cart' ? ' text-gray-400' : ''}`}><Link className="flex justify-center items-center gap-x-2 " href={'/cart'}
                     >Cart <MdOutlineShoppingCart size={26} className="" /></Link></li>
                 </ul>
             </div>
@@ -52,21 +52,21 @@ const Navbar = ({ isMenuOpen, setMenuOpen, light }: { isMenuOpen: boolean, setMe
                 {/* Centered Navigation Links */}
                 <div className="flex justify-center items-center font-medium ml-auto">
                     <ul className={`flex gap-x-4`}>
-                        <li className={`hover:underline decoration `}>
+                        <li className={`hover:underline decoration ${router.pathname === '/join' ? ' text-gray-400' : ''} `}>
                             <Link href="/join">Join us</Link>
                         </li>
-                        <li className={`hover:underline decoration `}>
+                        <li className={`hover:underline decoration ${router.pathname === '/about' ? ' text-gray-400' : ''} `}>
                             <Link href="/about">About us</Link>
                         </li>
-                        <li className={`hover:underline decoration `}>
+                        <li className={`hover:underline decoration ${router.pathname === '/store' ? ' text-gray-400' : ''} `}>
                             <Link href="/store">Store</Link>
                         </li>
 
-                        <li className={`hover:underline decoration `}>
+                        <li className={`hover:underline decoration ${router.pathname === '/activities' ? ' text-gray-400' : ''} `}>
                             <Link href="/activities">Activities</Link>
                         </li>
-                        <li className={`hover:underline decoration`}>
-                            <Link href={'/cart'} className="flex relative items-center" >Cart <span className="absolute  top-4 right-0 bg-green-500 rounded-full px-2 py-1">{cartQuantity}</span> <MdOutlineShoppingCart size={20} className="ml-2" /></Link>
+                        <li className={`hover:underline decoration ${router.pathname === '/cart' ? ' text-gray-400' : ''}`}>
+                            <Link href={'/cart'} className="flex relative items-center" >Cart <span className="absolute  top-4 right-0 bg-green-500 rounded-full px-2 py-1 text-white text-sm">{cartQuantity}</span> <MdOutlineShoppingCart size={20} className="ml-2" /></Link>
                         </li>
                     </ul>
                 </div>

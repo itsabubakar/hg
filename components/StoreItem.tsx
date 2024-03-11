@@ -18,7 +18,7 @@ const StoreItem = ({ id, name, price, imgUrl }: Props) => {
     return (
         <div className=" max-w-56">
             <div>
-                <Image className="w-full" alt="img" src={imgUrl} width={200} height={200} />
+                <Image className="w-full h-60" alt="img" src={imgUrl} width={200} height={200} />
             </div>
 
             <h2 className=" pt-2 font-pont text-gray-800">{name}</h2>

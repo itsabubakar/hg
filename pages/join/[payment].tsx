@@ -1,22 +1,19 @@
 import PaystackPop from '@paystack/inline-js'
-import { useShoppingCart } from '@/context/ShoppingCartContext'
 import { useFormik } from 'formik'
-import storeItem from "../data/item.json"
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
 
-const CheckOut = () => {
-    const { cartItems } = useShoppingCart()
+const JoinUsPayment = () => {
     const [isMenuOpen, setMenuOpen] = useState(false)
     const router = useRouter()
+    const { payment } = router.query;
 
-    const price = Math.round(cartItems.reduce((total, cartItem) => {
-        const item = storeItem.find(i => i.id === cartItem.id)
-        return total + (item?.price || 0) * cartItem.quantity
-    }, 0))
+
+
+    const price = payment
 
     // formik logic
     const formik = useFormik({
@@ -125,13 +122,6 @@ const CheckOut = () => {
                                         onBlur={formik.handleBlur}
                                         id="phone" type="text" name="phone" className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner mb-4" required />
 
-                                    {/* Shipping address */}
-                                    <label htmlFor="address" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Shipping Address</label>
-                                    <input
-                                        value={formik.values.address}
-                                        onChange={formik.handleChange}
-                                        onBlur={formik.handleBlur}
-                                        id="address" type="text" name="address" className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner mb-4" required />
 
                                     <button type="submit" className="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-green-500 shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none mb-4">
                                         Pay NGN {price}
@@ -153,4 +143,4 @@ const CheckOut = () => {
 
     )
 }
-export default CheckOut
+export default JoinUsPayment

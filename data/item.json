@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Book",
-        "price": 10.99,
-        "imgUrl": "/img/hlogo.png"
+        "name": "Noni",
+        "price": 9000,
+        "imgUrl": "/img/noni.jpg"
     },
     {
         "id": 2,
-        "name": "Computer",
-        "price": 1199,
-        "imgUrl": "/img/hlogo.png"
+        "name": "Herbal Blast",
+        "price": 400,
+        "imgUrl": "/img/herb-blast.jpg"
     },
     {
         "id": 3,
-        "name": "Banana",
-        "price": 1.05,
-        "imgUrl": "/img/hlogo.png"
+        "name": "Pure Organic Honey",
+        "price": 1800,
+        "imgUrl": "/img/honey.jpg"
     },
     {
         "id": 4,
-        "name": "Car",
-        "price": 14000,
-        "imgUrl": "/img/hlogo.png"
+        "name": "Virgin Coconut Oil",
+        "price": 4000,
+        "imgUrl": "/img/coconit-oil.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Herbal Teas",
+        "price": 1800,
+        "imgUrl": "/img/tea.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mixed dried/roasted seeds & nuts",
+        "price": 1200,
+        "imgUrl": "/img/seeds.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mixed fruits & Vegetables",
+        "price": 2300,
+        "imgUrl": "/img/fruits-veg.jpg"
     }
 ]

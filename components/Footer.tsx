@@ -7,7 +7,7 @@ const Footer = (props: Props) => {
                 <div className="max-w-6xl mx-auto flex md:flex-row flex-col gap-4 lg:gap-10  justify-center px-5 lg:px-0 items-center lg:h-[320px]   z-20 relative">
                     <section className="w-full lg:w-1/2">
                         <h2 className="font-pont pb-4 font-semibold">Subscribe to our newsletter</h2>
-                        <p className="pb-4">Stay in touch and subscribe to our newsletter for upcoming events, residency info, and inspiration!</p>
+                        <p className="pb-4">Stay in touch and subscribe to our newsletter for upcoming events and information</p>
                         <div>
                             <form>
                                 <input className="w-full px-2 py-3 rounded-md" type="email" placeholder="Email address" />
@@ -22,10 +22,7 @@ const Footer = (props: Props) => {
                         <p className="font-jost pb-4">8C Dabo Rd. Off Kefi Rd. Barnawa
                             Kaduna, Nigeria 800243</p>
                         <p className="font-jost underline text-green-500 pb-2">info@halalagric.com</p>
-                        <p className="font-jost underline text-green-500">+234 (803)-872-0064</p>
-
-
-
+                        <p className="font-jost underline text-green-500">070 3000 3000</p>
 
                     </section>
                 </div>
